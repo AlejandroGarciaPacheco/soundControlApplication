@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        android:background="@color/white">
+
+
+        <TextView
+            android:id="@+id/text_view_login_headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your credentials!"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+        <TextView
+            android:id="@+id/text_view_login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_login_headline"
+            android:layout_marginTop="50dp"
+            android:padding="6dp"
+            android:text="Email*"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_text_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_login_email"
+            android:layout_marginTop="10dp"
+            android:hint="Enter email"
+            android:inputType="textEmailAddress"
+            android:padding="6dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_view_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_text_login"
+            android:layout_marginTop="20dp"
+            android:text="Password*"
+            android:textColor="#555555"
+            android:textSize="16sp"
+            android:padding="6dp"/>
+
+        <EditText
+            android:id="@+id/edit_text_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_login_password"
+            android:layout_marginTop="10dp"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:padding="6dp"
+            android:textSize="16sp" />
+        
+        
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:id="@+id/button_login"
+            android:layout_below="@+id/edit_text_password"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="70dp">
+
+        </Button>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

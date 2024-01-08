@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619934049034",
+    "project_id": "soundcontrolwithfirebase",
+    "storage_bucket": "soundcontrolwithfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619934049034:android:1b1280b9a70d94ab74d0f3",
+        "android_client_info": {
+          "package_name": "com.example.soundcontrolapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619934049034-u0j5a05d90s4314dgf42i7t67qmtr9es.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCT8nw_1nooAZWmAae2l_t_drIP3VFEeY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619934049034-u0j5a05d90s4314dgf42i7t67qmtr9es.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
