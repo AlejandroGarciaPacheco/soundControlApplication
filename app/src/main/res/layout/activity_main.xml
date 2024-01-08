@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/bButton"
+            android:layout_width="105dp"
+
+            android:layout_height="150dp"
+
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_background"
+            android:src="@drawable/bluetoothicon_foreground"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="25dp"
+            android:text="Connect!"
+            android:textColor="#E2D6D6"
+            app:layout_constraintEnd_toEndOf="@+id/bButton"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/bButton"
+            app:layout_constraintTop_toTopOf="@+id/bButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

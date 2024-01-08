@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VolumeScheduler">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fragment_createalarm_scheduleAlarmHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Schedule Alarm"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/fragment_createalarm_timePickerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_scheduleAlarmHeading">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:text="Scheduled Time"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                <TimePicker
+                    android:id="@+id/fragment_createalarm_timePicker"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.6"
+                    android:timePickerMode="spinner" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/alarmTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Volume Scheduler"
+                app:layout_constraintTop_toBottomOf="@+id/fragment_createalarm_timePickerLayout" />
+
+
+
+
+            <TextView
+                android:id="@+id/mediaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Media Volume:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/alarmTitle" />
+
+            <EditText
+                android:id="@+id/mediaEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/mediaTextView"
+                app:layout_constraintTop_toBottomOf="@+id/alarmTitle" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="%"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/mediaEditText"
+                app:layout_constraintTop_toBottomOf="@+id/alarmTitle" />
+
+            <TextView
+                android:id="@+id/voicecallTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Voicecall Volume:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mediaTextView" />
+
+            <EditText
+                android:id="@+id/voicecallEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/voicecallTextView"
+                app:layout_constraintTop_toBottomOf="@+id/mediaEditText" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="%"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/voicecallEditText"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/ringTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Ring Volume"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/voicecallTextView" />
+
+            <EditText
+                android:id="@+id/ringEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/ringTextView"
+                app:layout_constraintTop_toBottomOf="@+id/voicecallEditText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notificationEditText">
+
+                <Button
+                    android:id="@+id/fragment_createalarm_scheduleAlarm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:backgroundTint="#4DE80A"
+                    android:text="Schedule Alarm" />
+
+                <Button
+                    android:id="@+id/cancelVolumeScheduler"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+
+                    android:backgroundTint="#ED0707"
+                    android:text="Schedule Alarm" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="%"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/ringEditText"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/AlarmTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Alarm Volume:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ringTextView" />
+
+            <EditText
+                android:id="@+id/alarmEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/AlarmTextView"
+                app:layout_constraintTop_toBottomOf="@+id/ringEditText" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="%"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/alarmEditText"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/notificationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Notification Volume:"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AlarmTextView" />
+
+            <EditText
+                android:id="@+id/notificationEditText"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/notificationTextView"
+                app:layout_constraintTop_toBottomOf="@+id/alarmEditText" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="%"
+                android:textSize="24sp"
+                app:layout_constraintStart_toEndOf="@+id/notificationEditText"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".preset_profile_2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RL_preset_profile_2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#24B3AE">
+
+            <TextView
+                android:id="@+id/activity_preset_profile_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="80dp"
+                android:text="Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/divider_name"
+                android:layout_width="250dp"
+                android:layout_height="1dp"
+                android:layout_below="@id/activity_preset_profile_2"
+                android:layout_alignParentStart="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/text_preset_profile_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider_name"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/transparent"
+                android:padding="6dp"
+                android:text="Preset2"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".SliderVolume">
+
+            <LinearLayout
+                android:id="@+id/preset_2_linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:background="#0AA8CF"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:id="@+id/preset2_musicVolumeSB"
+                        android:layout_width="323dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="right|center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/preset2_musicVolumeSB"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/music_icon" />
+
+                    <TextView
+                        android:id="@+id/preset2_music_volume_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="50dp"
+                        android:text="Volume:"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/preset2_musicVolumeSB"
+                        app:layout_constraintStart_toStartOf="@+id/preset2_musicVolumeSB"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="1"
+                android:background="#0AA8CF"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:id="@+id/preset2_voiceCallVolumeSB"
+                        android:layout_width="320dp"
+                        android:layout_height="40dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/preset2_voiceCallVolumeSB"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/voicecall_icon" />
+
+                    <TextView
+                        android:id="@+id/preset2_voice_call_volume_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume"
+                        app:layout_constraintBottom_toTopOf="@+id/preset2_voiceCallVolumeSB"
+                        app:layout_constraintEnd_toEndOf="@+id/preset2_voiceCallVolumeSB"
+                        app:layout_constraintStart_toStartOf="@+id/preset2_voiceCallVolumeSB"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                android:layout_weight="1"
+                android:background="#0AA8CF"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:id="@+id/preset2_ringVolumeSB"
+                        android:layout_width="324dp"
+                        android:layout_height="38dp"
+                        android:min="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView5"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/preset2_ringVolumeSB"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ring_icon" />
+
+                    <TextView
+                        android:id="@+id/preset2_ring_volume_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="volume"
+                        app:layout_constraintBottom_toTopOf="@+id/preset2_ringVolumeSB"
+                        app:layout_constraintEnd_toEndOf="@+id/preset2_ringVolumeSB"
+                        app:layout_constraintStart_toStartOf="@+id/preset2_ringVolumeSB"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:layout_weight="1"
+                android:background="#0AA8CF"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:id="@+id/preset2_alarmVolumeSB"
+                        android:layout_width="320dp"
+                        android:layout_height="11dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView6"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/preset2_alarmVolumeSB"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/alarm_icon" />
+
+                    <TextView
+                        android:id="@+id/preset2_alarm_volume_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume"
+                        app:layout_constraintBottom_toTopOf="@+id/preset2_alarmVolumeSB"
+                        app:layout_constraintEnd_toEndOf="@+id/preset2_alarmVolumeSB"
+                        app:layout_constraintStart_toStartOf="@+id/preset2_alarmVolumeSB"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#0AA8CF"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <SeekBar
+                        android:id="@+id/preset2_notificationVolumeSB"
+                        android:layout_width="321dp"
+                        android:layout_height="13dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView7"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/preset2_notificationVolumeSB"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/notification_icon" />
+
+                    <TextView
+                        android:id="@+id/preset2_notification_volume_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Volume"
+                        app:layout_constraintBottom_toTopOf="@+id/preset2_notificationVolumeSB"
+                        app:layout_constraintEnd_toEndOf="@+id/preset2_notificationVolumeSB"
+                        app:layout_constraintStart_toStartOf="@+id/preset2_notificationVolumeSB"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/preset2_button"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+
+            android:layout_gravity="right"
+            android:text="Save" />
+
+
+    </LinearLayout>
+</ScrollView>

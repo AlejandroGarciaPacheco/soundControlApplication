@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+}
+rootProject.name = "soundControlApplication"
+include ':app'
+
+include ':java'
+include ':java'
+include ':openCV'
+include ':openCVv4.7'
